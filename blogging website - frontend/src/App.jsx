@@ -1,0 +1,16 @@
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar.component";
+import { LuHeading1 } from "react-icons/lu";
+
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Navbar />}>
+        <Route path="/signin" element={<h1>Sign in page</h1>} />
+        <Route path="/signup" element={<h1>Sign up page</h1>} />
+      </Route>
+    </Routes>
+  );
+};
+
+export default App;
