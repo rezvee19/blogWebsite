@@ -15,10 +15,10 @@ const InputBox = ({ name, type, placeholder, id, value, icon }) => {
         className="input-box "
       />
 
-      <i class={"fi " + icon + " input-icon"}></i>
+      <i className={"fi " + icon + " input-icon"}></i>
       {type == "password" ? (
         <i
-          class={
+          className={
             "fi fi-rr-eye" +
             (!passwordVisible ? "-crossed" : "") +
             " input-icon left-[auto] right-4"
